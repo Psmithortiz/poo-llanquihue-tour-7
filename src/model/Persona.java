@@ -5,7 +5,7 @@ package model;
  * superclase abstracta de la jerarquía de personas y mantiene relaciones de
  * composición con {@link Rut} y {@link Direccion}.
  *
- * <p>Implementa {@link Registrable}, de modo que toda persona queda obligada a
+ * Implementa {@link Registrable}, de modo que toda persona queda obligada a
  * ofrecer un mensaje de registro y un resumen de sus datos. Al ser abstracta,
  * no implementa esos métodos: los hereda como abstractos y traslada la
  * obligación a las subclases concretas.
