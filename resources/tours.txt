@@ -1,0 +1,5 @@
+Paseo Lacustre Lago Llanquihue;Av Costanera;120;Llanquihue;Los Lagos;18000;10
+Ruta Gastronomica Frutillar;Calle Philippi;45;Frutillar;Los Lagos;25000;20
+Excursion Volcan Osorno;Ruta 225;1200;Puerto Varas;Los Lagos;42000;30
+City Tour Puerto Varas;Av Gramado;300;Puerto Varas;Los Lagos;12000;15
+Navegacion Isla Huar;Calle Balmaceda;88;Calbuco;Los Lagos;30000;25

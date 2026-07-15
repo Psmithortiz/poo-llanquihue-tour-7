@@ -1,0 +1,2 @@
+Gabriela Ortiz;15999000-1;Camino Volcan;800;Puerto Varas;Los Lagos;contacto@hostallago.cl;+56901111111;Hostal Vista Lago;Alojamiento;20
+Ricardo Salas;18000111-2;Av Vicente Perez Rosales;1500;Frutillar;Los Lagos;info@cabanasfrutillar.cl;+56902222222;Cabanas Frutillar;Alojamiento;12

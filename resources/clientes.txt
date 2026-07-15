@@ -1,0 +1,5 @@
+Juan Perez;12345678-9;Los Robles;452;Macul;Region Metropolitana;juan.perez@mail.com;+56911111111
+Maria Gonzalez;9876543-2;Av Diego Portales;1200;Puerto Montt;Los Lagos;maria.gonzalez@mail.com;+56922222222
+Pedro Soto;15234876-9;Camino Ensenada;3500;Puerto Varas;Los Lagos;pedro.soto@mail.com;+56933333333
+Carla Rojas;18765432-1;Calle Philippi;88;Frutillar;Los Lagos;carla.rojas@mail.com;+56944444444
+Diego Munoz;20111222-3;Av Costanera;15;Llanquihue;Los Lagos;diego.munoz@mail.com;+56955555555

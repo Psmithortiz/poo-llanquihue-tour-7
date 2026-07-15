@@ -1,0 +1,3 @@
+Andrea Lagos;14555666-7;Calle Antonio Varas;220;Puerto Montt;Los Lagos;andrea.lagos@mail.com;+56981111111;720000;2016-05-10;Finanzas
+Francisca Vidal;19666777-8;Av Angelmo;180;Puerto Montt;Los Lagos;francisca.vidal@mail.com;+56982222222;700000;2020-07-22;Reservas
+Cristobal Reyes;12888999-0;Calle Urmeneta;95;Puerto Varas;Los Lagos;cristobal.reyes@mail.com;+56983333333;710000;2019-03-30;Marketing
