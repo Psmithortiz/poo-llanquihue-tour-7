@@ -2,4 +2,4 @@ Camila Soto;11111111-1;Av Costanera;120;Llanquihue;Los Lagos;camila.soto@mail.co
 Hans Muller;22222222-2;Calle Alemania;45;Frutillar;Los Lagos;hans.muller@mail.com;+56962222222;900000;2015-06-01;Aleman;15
 Javiera Paredes;33333333-3;Ruta 225;300;Puerto Varas;Los Lagos;javiera.paredes@mail.com;+56963333333;780000;2021-09-10;Ingles;4
 Tomas Vera;44444444-4;Av Gramado;210;Puerto Varas;Los Lagos;tomas.vera@mail.com;+56964444444;820000;2019-01-20;Espanol;6
-Ingrid Bauer;55555555-5;Calle Balmaceda;33;Calbuco;Los Lagos;ingrid.bauer@mail.com;+56965555555;950000;2012-11-05;Aleman;20
+Ingrid Bauer;55555555-5;Calle Balmaceda;33;Calbuco;Los Lagos;ingrid.bauer@mail.com;+56965555555;950000;hola;Aleman;20

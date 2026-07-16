@@ -47,7 +47,7 @@ public class LectorArchivos {
                     Cliente cliente = new Cliente(
                             p[0], new Rut(p[1]), construirDireccion(p), p[6], p[7]);
                     lista.add(cliente);
-                } catch (RutInvalidoException | IllegalArgumentException e) {
+                } catch (RutInvalidoException | RuntimeException e) {
                     System.out.println("Linea ignorada en clientes: " + linea + " -> " + e.getMessage());
                 }
             }
@@ -76,7 +76,7 @@ public class LectorArchivos {
                             p[10],                         // idioma
                             Integer.parseInt(p[11]));      // experiencia
                     lista.add(guia);
-                } catch (RutInvalidoException | IllegalArgumentException e) {
+                } catch (RutInvalidoException | RuntimeException e) {
                     System.out.println("Linea ignorada en guias: " + linea + " -> " + e.getMessage());
                 }
             }
@@ -104,7 +104,7 @@ public class LectorArchivos {
                             LocalDate.parse(p[9]),         // fecha de contratacion
                             p[10]);                        // tipoLicencia
                     lista.add(chofer);
-                } catch (RutInvalidoException | IllegalArgumentException e) {
+                } catch (RutInvalidoException | RuntimeException e) {
                     System.out.println("Linea ignorada en choferes: " + linea + " -> " + e.getMessage());
                 }
             }
@@ -132,7 +132,7 @@ public class LectorArchivos {
                             LocalDate.parse(p[9]),         // fecha de contratacion
                             p[10]);                        // area
                     lista.add(admin);
-                } catch (RutInvalidoException | IllegalArgumentException e) {
+                } catch (RutInvalidoException | RuntimeException e) {
                     System.out.println("Linea ignorada en administrativos: " + linea + " -> " + e.getMessage());
                 }
             }
@@ -161,7 +161,7 @@ public class LectorArchivos {
                             Integer.parseInt(p[10]),       // capacidad
                             p[11]);                        // tipoVehiculo
                     lista.add(operador);
-                } catch (RutInvalidoException | IllegalArgumentException e) {
+                } catch (RutInvalidoException | RuntimeException e) {
                     System.out.println("Linea ignorada en operadores: " + linea + " -> " + e.getMessage());
                 }
             }
@@ -189,7 +189,7 @@ public class LectorArchivos {
                             p[9],                          // servicio
                             Integer.parseInt(p[10]));      // habitaciones
                     lista.add(alojamiento);
-                } catch (RutInvalidoException | IllegalArgumentException e) {
+                } catch (RutInvalidoException | RuntimeException e) {
                     System.out.println("Linea ignorada en alojamientos: " + linea + " -> " + e.getMessage());
                 }
             }
@@ -218,7 +218,7 @@ public class LectorArchivos {
                             Integer.parseInt(p[5]),        // precio
                             Integer.parseInt(p[6]));       // capacidad
                     lista.add(tour);
-                } catch (IllegalArgumentException e) {
+                } catch (RuntimeException e) {
                     System.out.println("Linea ignorada en tours: " + linea + " -> " + e.getMessage());
                 }
             }
@@ -264,7 +264,7 @@ public class LectorArchivos {
                             LocalDate.parse(p[2]),
                             Integer.parseInt(p[3]));
                     lista.add(reserva);
-                } catch (IllegalArgumentException e) {
+                } catch (RuntimeException e) {
                     System.out.println("Linea ignorada en reservas: " + linea + " -> " + e.getMessage());
                 }
             }
