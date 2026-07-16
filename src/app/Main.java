@@ -166,8 +166,7 @@ public class Main {
 
             Cliente cliente = new Cliente(nombre, rut,
                     new Direccion(calle, numero, comuna, region), correo, telefono);
-            gestor.getClientes().add(cliente);
-            gestor.getRegistrables().add(cliente);
+            gestor.agregarCliente(cliente);
             System.out.println(cliente.registrar());
         } catch (Exception e) {
             System.out.println("No se pudo registrar el cliente: " + e.getMessage());

@@ -27,7 +27,9 @@ public class GestorAgencia {
     private final ArrayList<Tour> tours;
     private final ArrayList<Reserva> reservas;
 
-    /** Coleccion polimorfica que reune todas las entidades registrables. */
+    /**
+     * Coleccion polimorfica que reune todas las entidades registrables.
+     */
     private final ArrayList<Registrable> registrables;
 
     private final LectorArchivos lector;
@@ -91,11 +93,25 @@ public class GestorAgencia {
     }
 
     // getters de las colecciones
-    public ArrayList<Cliente> getClientes() { return clientes; }
-    public ArrayList<Guia> getGuias() { return guias; }
-    public ArrayList<Tour> getTours() { return tours; }
-    public ArrayList<Reserva> getReservas() { return reservas; }
-    public ArrayList<Registrable> getRegistrables() { return registrables; }
+    public ArrayList<Cliente> getClientes() {
+        return clientes;
+    }
+
+    public ArrayList<Guia> getGuias() {
+        return guias;
+    }
+
+    public ArrayList<Tour> getTours() {
+        return tours;
+    }
+
+    public ArrayList<Reserva> getReservas() {
+        return reservas;
+    }
+
+    public ArrayList<Registrable> getRegistrables() {
+        return registrables;
+    }
 
     /**
      * Calcula cuantos cupos estan ocupados en un tour, sumando las personas de
@@ -120,8 +136,8 @@ public class GestorAgencia {
      * personas, comparando los cupos ya ocupados mas los solicitados contra la
      * capacidad maxima del tour.
      *
-     * @param tour             tour a consultar
-     * @param personasNuevas   cantidad de personas que se desea reservar
+     * @param tour           tour a consultar
+     * @param personasNuevas cantidad de personas que se desea reservar
      * @return {@code true} si hay cupo suficiente, {@code false} en caso contrario
      */
     public boolean hayCupo(Tour tour, int personasNuevas) {
@@ -213,6 +229,7 @@ public class GestorAgencia {
         }
         return total;
     }
+
     /**
      * Recorre la coleccion polimorfica y cuenta cuantas entidades hay de cada
      * tipo principal de persona (clientes, empleados y proveedores), usando
@@ -239,5 +256,11 @@ public class GestorAgencia {
                 + " | Empleados: " + empleadosCount
                 + " | Proveedores: " + proveedoresCount;
     }
+
+    public void agregarCliente(Cliente cliente) {
+        clientes.add(cliente);
+        registrables.add(cliente);
+    }
+
 
 }
