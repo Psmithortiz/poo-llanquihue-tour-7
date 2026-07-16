@@ -36,6 +36,7 @@ public class GestorAgencia {
      * Crea el gestor e inicializa todas las colecciones vacias.
      */
     public GestorAgencia() {
+        // Se crean todas las arraylist + inicio de lector de archivos
         clientes = new ArrayList<>();
         guias = new ArrayList<>();
         choferes = new ArrayList<>();
@@ -55,6 +56,7 @@ public class GestorAgencia {
      * cargada se agrega tambien a la coleccion polimorfica.
      */
     public void cargarDatos() {
+        // Se cargan todas las arraylist
         clientes.addAll(lector.leerClientes());
         guias.addAll(lector.leerGuias());
         choferes.addAll(lector.leerChoferes());
@@ -72,7 +74,10 @@ public class GestorAgencia {
         for (Tour t : tours) {
             mapaTours.put(t.getNombre(), t);
         }
-        reservas.addAll(lector.leerReservas(mapaClientes, mapaTours));
+
+        for (Reserva reserva : lector.leerReservas(mapaClientes, mapaTours)) {
+            agregarReserva(reserva);
+        }
 
         // Todas las entidades se reunen en la coleccion polimorfica
         registrables.addAll(clientes);
@@ -82,7 +87,7 @@ public class GestorAgencia {
         registrables.addAll(operadores);
         registrables.addAll(alojamientos);
         registrables.addAll(tours);
-        registrables.addAll(reservas);
+        // NOTA: las reservas NO se agregan aqui: agregarReserva() ya las agrego arriba
     }
 
     // getters de las colecciones

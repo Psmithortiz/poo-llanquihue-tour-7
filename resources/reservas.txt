@@ -5,3 +5,4 @@
 20111222-3;Ruta Gastronomica Frutillar;2026-08-25;5
 12345678-9;City Tour Puerto Varas;2026-09-10;2
 9876543-2;Navegacion Isla Huar;2026-10-05;8
+18765432-1;Paseo Lacustre Lago Llanquihue;2026-08-15;5
