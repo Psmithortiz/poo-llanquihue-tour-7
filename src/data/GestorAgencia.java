@@ -208,6 +208,31 @@ public class GestorAgencia {
         }
         return total;
     }
+    /**
+     * Recorre la coleccion polimorfica y cuenta cuantas entidades hay de cada
+     * tipo principal de persona (clientes, empleados y proveedores), usando
+     * {@code instanceof} para diferenciar el tipo real de cada objeto.
+     *
+     * @return texto con el conteo de entidades por tipo
+     */
+    public String contarPorTipo() {
+        int clientesCount = 0;
+        int empleadosCount = 0;
+        int proveedoresCount = 0;
 
+        for (Registrable r : registrables) {
+            if (r instanceof Cliente) {
+                clientesCount++;
+            } else if (r instanceof Empleado) {
+                empleadosCount++;
+            } else if (r instanceof Proveedor) {
+                proveedoresCount++;
+            }
+        }
+
+        return "Clientes: " + clientesCount
+                + " | Empleados: " + empleadosCount
+                + " | Proveedores: " + proveedoresCount;
+    }
 
 }

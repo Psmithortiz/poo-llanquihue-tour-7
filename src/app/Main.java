@@ -42,6 +42,7 @@ public class Main {
                 case "5": crearReserva(gestor); break;
                 case "6": verReservasDeCliente(gestor); break;
                 case "7": verNomina(gestor); break;
+                case "8": verConteoPorTipo(gestor); break;
                 case "0": continuar = false; break;
                 default: System.out.println("Opcion no valida."); break;
             }
@@ -63,6 +64,7 @@ public class Main {
         System.out.println("5. Crear reserva");
         System.out.println("6. Ver reservas de un cliente");
         System.out.println("7. Calcular nomina de empleados");
+        System.out.println("8. Contar entidades por tipo");
         System.out.println("0. Salir");
         System.out.print("Seleccione una opcion: ");
     }
@@ -254,6 +256,16 @@ public class Main {
     private static void verNomina(GestorAgencia gestor) {
         int total = gestor.calcularNomina();
         System.out.println("\nNomina total de empleados: $" + String.format("%,d", total));
+    }
+
+    /**
+     * Muestra el conteo de entidades por tipo.
+     *
+     * @param gestor gestor con las entidades cargadas
+     */
+    private static void verConteoPorTipo(GestorAgencia gestor) {
+        System.out.println("\n--- CONTEO POR TIPO ---");
+        System.out.println(gestor.contarPorTipo());
     }
 
 }

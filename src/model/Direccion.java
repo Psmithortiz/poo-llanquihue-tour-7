@@ -126,6 +126,6 @@ public class Direccion {
      */
     @Override
     public String toString() {
-        return "Calle " + calle + " " + numeroCalle + ", " + comuna + ", " + region;
+        return calle + " " + numeroCalle + ", " + comuna + ", " + region;
     }
 }
